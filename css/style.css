@@ -2,7 +2,7 @@
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-color:#2196F3;
-    --second-accent-color:#FFFFFF;
+    --primary-color:#FFFFFF;
    --footer-text-color: rgba(255, 255, 255, 0.6);
    --background: #F5F5F5;
    --hero-background: #2F303A;
@@ -14,7 +14,7 @@
 /* index*/
 
 body {
-    background-color: var(--background) ;
+    background-color: var(--primary-color) ;
     color:var(--primary-text-color) ;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
@@ -42,7 +42,7 @@ line-height: 1.19;
 }
 
 .logo-footer{
-    color: var(--second-accent-color);
+    color: var(--primary-color);
 }
 
 .nav-link {
@@ -87,18 +87,19 @@ letter-spacing: 0.02em;
 /* hero*/
 
 .title-hero {
-    color: var(--second-accent-color);
+    color: var(--primary-color);
  
 font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
+
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 .section-hero  {
     background-color: var(--hero-background);
+    text-align: center;
 }
 
 /* section особливості*/
@@ -131,6 +132,11 @@ text-align: center;
 
 .features .title {
     color: var(--title-text-color);
+  
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
 }
 
 .text {
@@ -140,6 +146,11 @@ line-height: 1.71;
 
 
 /*team-title*/
+
+.section-team{
+    background-color: var(--button-background-color);
+}
+
 
 .team-title{
     color: var(--title-text-color);
@@ -157,6 +168,9 @@ line-height: 1.19;
 text-align: center;
 
 }
+.team-item {
+    background-color: var(--primary-color);
+}
 
 /* button*/
 
@@ -168,9 +182,6 @@ text-align: center;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 }
 
@@ -187,7 +198,7 @@ color: var(--second-accent-color);
 }
 
 .adress {
-    color: var(--second-accent-color);
+    color: var(--primary-color);
 }
 
 .footer-link {
